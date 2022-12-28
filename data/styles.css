@@ -1,5 +1,5 @@
 ﻿.ax_default {
-  font-family:"ArialMT", "Arial", sans-serif;
+  font-family:'Arial';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -10,55 +10,82 @@
   line-height:normal;
   text-transform:none;
 }
-._图像 {
+.box_3 {
 }
-._标题_1 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._图片_ {
+}
+.button {
+}
+.primary_button {
+  color:#FFFFFF;
+}
+._一级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
-._标题_2 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._二级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
-._标题_3 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._三级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:18px;
   text-align:left;
 }
-._标题_4 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._四级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:14px;
   text-align:left;
 }
-._标题_5 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._五级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   text-align:left;
 }
-._标题_6 {
-  font-family:"ArialMT", "Arial", sans-serif;
+._六级标题 {
+  font-family:'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:10px;
   text-align:left;
 }
-._文本 {
+._文本段落 {
+  text-align:left;
+}
+.text_field {
+  color:#000000;
+  text-align:left;
+}
+.text_area {
+  color:#000000;
+  text-align:left;
+}
+.droplist {
+  color:#000000;
   text-align:left;
 }
 .list_box {
   color:#000000;
   text-align:left;
+}
+.marker {
+  color:#FFFFFF;
+}
+.form_hint {
+  color:#999999;
+}
+.form_disabled {
 }
 ._表单提示 {
   color:#999999;
@@ -67,7 +94,25 @@
 }
 ._流程形状 {
 }
-.image {
+.paragraph {
+  text-align:left;
+}
+.line {
+}
+.heading_1 {
+  font-family:'Arial Bold', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.label {
+  font-size:14px;
+  text-align:left;
+}
+.horizontal_line {
+}
+.shape {
 }
 .box_1 {
 }
@@ -75,37 +120,14 @@
 }
 .ellipse {
 }
-.button {
+.image {
+  color:#000000;
 }
-._文本框_单行_ {
-  text-align:left;
-}
-.checkbox {
-  text-align:left;
-}
-.tree_node {
-  text-align:left;
-}
-.form_disabled {
-}
-.link_button {
-  color:#1E98D7;
-}
-.label {
-  font-size:13px;
-  text-align:left;
-}
-._下拉列表框 {
-  color:#DEDEDE;
-  text-align:left;
-}
-.heading_1 {
-  font-family:"ArialMT", "Arial", sans-serif;
-  font-weight:bold;
+.iconfont {
+  font-family:'iconfont Regular', 'iconfont';
+  font-weight:400;
   font-style:normal;
-  font-size:32px;
-  text-align:left;
-}
-.image1 {
+  font-size:18px;
+  color:#666666;
 }
 textarea, select, input, button { outline: none; }

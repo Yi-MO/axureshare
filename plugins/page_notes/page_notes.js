@@ -9,14 +9,14 @@
             $axure.player.createPluginHost({
                 id: 'pageNotesHost',
                 context: 'inspect',
-                title: 'Notes',
+                title: '说明',
                 gid: 2,
             });
         }
 
         // Load footnotes on widgets
         if ($axure.document.configuration.showAnnotations) {
-            $('#overflowMenuContainer').prepend('<div id="showNotesOption" class="showOption" style="order: 3"><div class="overflowOptionCheckbox"></div>Show Note Markers</div>');
+            $('#overflowMenuContainer').prepend('<div id="showNotesOption" class="showOption" style="order: 3"><div class="overflowOptionCheckbox"></div>显示脚注</div>');
         }
 
         createNotesOverlay();
@@ -64,7 +64,7 @@
 
                 if (pageNoteUi.length > 0) {
                     pageNoteUi += "<div class='lineDivider'></div>";
-                    var pageNotesHeader = "<div id='pageNotesSectionHeader' class='notesSectionHeader pluginNameHeader'>Page Notes</div>";
+                    var pageNotesHeader = "<div id='pageNotesSectionHeader' class='notesSectionHeader pluginNameHeader'>页面说明</div>";
                     $('#pageNotesContent').append(pageNotesHeader + pageNoteUi);
                 }
             }
@@ -103,7 +103,7 @@
                 }
 
                 if (widgetNoteUi.length > 0) {
-                    var widgetNotesHeader = "<div id='widgetNotesSectionHeader' class='notesSectionHeader pluginNameHeader'>Widget Notes</div>";
+                    var widgetNotesHeader = "<div id='widgetNotesSectionHeader' class='notesSectionHeader pluginNameHeader'>组件备注</div>";
                     $('#pageNotesContent').append(widgetNotesHeader + widgetNoteUi);
 
                     //$('.widgetNoteContainer').children(':last-child').remove();
@@ -453,18 +453,18 @@
     function generatePageNotes() {
         var pageNotesUi = "<div id='pageNotesHeader'>";
 
-        pageNotesUi += "<div id='pageNotesToolbar' style='height: 10px;'>";
+        pageNotesUi += "<div id='pageNotesToolbar' style='height: 12px;'>";
         pageNotesUi += "</div>";
         pageNotesUi += "</div>";
 
 
         pageNotesUi += "<div id='pageNotesScrollContainer'>";
         pageNotesUi += "<div id='pageNotesContainer'>";
-        pageNotesUi += "<div id='pageNotesEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>No notes for this page.</div><div class='emptyStateContent'>Notes added in Axure RP will appear here.</div><div class='dottedDivider'></div></div>";
+        pageNotesUi += "<div id='pageNotesEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>此页面没有说明。</div><div class='emptyStateContent'>Axure RP中添加的说明将在此处显示。</div><div class='dottedDivider'></div></div>";
         pageNotesUi += "<span id='pageNotesContent'></span>";
         pageNotesUi += "</div></div>";
 
-        $('#pageNotesHost').append(pageNotesUi);
+        $('#pageNotesHost').html(pageNotesUi);
 
         if(!$axure.document.configuration.showAnnotations) {
             $('#pageNotesHost .pageNameHeader').css('padding-right', '55px');
